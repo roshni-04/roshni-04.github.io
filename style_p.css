@@ -119,7 +119,10 @@ nav ul li a:hover::after{
     color:rgb(165, 124, 241);
     
 }
-
+.about-col-1
+{
+    margin-top:50px;
+}
 .row{
     display:flex;
     justify-content: space-between;
