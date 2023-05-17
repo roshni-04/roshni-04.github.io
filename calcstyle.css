@@ -1,0 +1,129 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    display: inline-block
+    width: 100%;
+    position: relative;
+}
+
+nav{
+    display: inline-block;
+   align-items: center;
+    justify-content: space-evenly;
+    background-color: #c8b4f0;
+    
+}
+
+ul#sidemenu{
+    display: flex;
+    width: 100%;
+    margin: 10px;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none ;
+    margin: 0px 60px ;
+    justify-content: space-between;
+   
+}
+
+nav ul li a{
+    color: #080808;
+    text-decoration: none;
+    font-size: 18px;
+    position:relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height:3px;
+    background:rgb(247, 245, 249);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/************************************************************/
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(162, 162, 162, 0.211);
+    padding-top:40px;
+}
+
+
+
+.calculator{
+    display:inline-block;
+    border: 3px solid #070d16;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 0px;
+    background-color: rgb(110, 110, 110);
+    box-shadow: 0px 3px 15px rgb(0, 0, 0);
+}
+
+input{
+    width: 100%;
+    height: 50%;
+    border: none;
+    padding: 30px;
+    margin-bottom: 15px;
+    background-color: rgb(247, 244, 244);
+    box-shadow: 0px 3px 15px rgba(137, 135, 135,0.5);
+    font-size: 20px;
+    font-weight:bolder;
+    text-align: right;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input text{
+    font-size: 50px;
+}
+
+input::placeholder{
+    color: black;
+
+}
+
+button{
+    border:none;
+    width:65px;
+    height:65px;
+    margin: 5px;
+    border-radius: 60px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;   
+}
+
+.operator{
+    background-color: rgb(255, 136, 0);
+    color:white;
+}
+
+.textt{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight:bold;
+    margin: 10px 0px 30px auto;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, #211e1e2e);
+    color: #2b2b2c;
+}
